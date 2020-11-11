@@ -1,0 +1,80 @@
+.Checker-body {
+    margin: 0 auto 2rem;
+}
+
+.Checker-form {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.Checker-input {
+	width: 76%;
+    font-size: 1.2em;
+    padding: .5rem .75rem;
+    border: solid 1px #c6c6c9;
+    border-radius: 6px;
+    height: 3rem;
+}
+
+.Checker-button {
+	width: 22%;
+	height: 46px;
+	margin-left: 2%;
+	padding-right: 0.5rem;
+    padding-left: 0.5rem;
+	font-family: 'silka';
+	text-align: center;
+	text-transform: uppercase;
+    text-decoration: none;
+	font-size: 1em;
+	line-height: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+	color: white;
+	background-color: #4e5ee4;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    border: none;
+    border-radius: 6px;
+	cursor: pointer;
+}
+
+.Checker-button:hover {
+	background-color: #4352d4;
+}
+
+.Checker-button:disabled,
+.Checker-button[disabled]{
+	height: 44px;
+	border: solid 1px #4e5ee4;
+	background-color: #f8f8fa;
+	box-shadow: none;
+	color: #4e5ee4;
+	opacity: .9;
+}
+
+.Checker-name {
+    font-family: 'silka';
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.Checker-response {
+	font-size: 1.3em;
+	margin-bottom: 3rem;
+	white-space: pre-wrap;
+  	word-wrap: break-word;
+}
+
+@media only screen and (max-width: 45rem) {
+  	.Checker-form { 
+	  	display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.Checker-input { width: 100%; }
+	.Checker-button { width: 140px; margin-top: 1rem; }
+}
